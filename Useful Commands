@@ -28,9 +28,7 @@ Search-ADAccount -Lockedout
 
 Search-ADAccount -AccountDisabled
 
-
 Get-ChildItem –Path "C:\path\to\folder" -Recurse | Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-30))} | Remove-Item
-
 
 Netsh wlan show wlanreport - wireless report
 
