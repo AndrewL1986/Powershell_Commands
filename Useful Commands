@@ -1,0 +1,39 @@
+Get-NetIPConfiguration - Ipconfig/all
+
+Get-Netadapter - get network adapter details
+
+Test-Netconnection
+
+Test-Connection -targetname -www.google.com -Repeat
+
+Rename-Computer
+
+Restart-Computer
+
+Shutdown-Computer
+
+Add-Computer -DomainName andrew.local
+
+Install-WindowsFeature
+
+test-computersecurechannel -credential  domain\admin -Repair   - Fix trust relationship
+
+Get-EventLog -LogName System -EntryType Error | Export-Csv -Path C:\Logs\errors.csv
+
+Search-ADAccount -PasswordNeverExpires
+
+Search-ADAccount -accountinactive -timespan 90:00:00:00
+
+Search-ADAccount -Lockedout
+
+Search-ADAccount -AccountDisabled
+
+
+Get-ChildItem –Path "C:\path\to\folder" -Recurse | Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-30))} | Remove-Item
+
+
+Netsh wlan show wlanreport - wireless report
+
+
+
+
